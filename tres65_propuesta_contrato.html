@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TRES65 Inmobiliaria — Propuesta & Contrato</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;background:#f4f1eb;color:#1a1a1a;}
+.top-nav{background:#0d1f3c;padding:0.75rem 1.5rem;display:flex;align-items:center;justify-content:space-between;}
+.nav-logo{font-family:Georgia,serif;color:#fff;font-size:15px;letter-spacing:1px;}
+.nav-link{color:#d4af37;font-size:12px;font-weight:600;cursor:pointer;border:1px solid rgba(212,175,55,0.4);padding:6px 14px;border-radius:20px;background:none;text-decoration:none;}
+#page-password{display:none;min-height:80vh;background:#0d1f3c;align-items:center;justify-content:center;}
+.pw-box{background:#fff;border-radius:16px;padding:2.5rem 1.5rem;max-width:340px;width:90%;margin:2rem auto;text-align:center;}
+.pw-input{width:100%;padding:12px;border:1px solid #ddd;border-radius:10px;font-size:14px;margin-bottom:0.75rem;outline:none;font-family:inherit;}
+.pw-btn{width:100%;padding:12px;background:#0d1f3c;color:#fff;border:none;border-radius:10px;font-size:14px;font-weight:600;cursor:pointer;font-family:inherit;}
+.pw-error{font-size:12px;color:#c0392b;margin-top:0.5rem;display:none;}
+#page-contract{display:none;}
+.contract-wrap{max-width:740px;margin:0 auto;padding:2rem 1.25rem;}
+.contract-header{text-align:center;margin-bottom:2rem;padding-bottom:1.5rem;border-bottom:2px solid #0d1f3c;}
+.contract-title{font-family:Georgia,serif;font-size:21px;font-weight:600;color:#0d1f3c;margin-bottom:0.4rem;}
+.contract-sub{font-size:12px;color:#888;}
+.clause{margin-bottom:1.4rem;}
+.clause-title{font-size:11px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:#0d1f3c;margin-bottom:0.4rem;border-left:3px solid #d4af37;padding-left:8px;}
+.clause-text{font-size:13px;line-height:1.85;color:#333;}
+.clause-text p{margin-bottom:0.75rem;}
+.hv{font-weight:600;color:#0d1f3c;}
+.sig-section{margin-top:2.5rem;padding-top:1.5rem;border-top:1px solid #e0dcd4;display:grid;grid-template-columns:1fr 1fr;gap:2rem;}
+.sig-block{text-align:center;}
+.sig-label{font-size:10px;color:#999;letter-spacing:1px;text-transform:uppercase;margin-bottom:0.4rem;display:block;}
+.sig-line-blank{border-bottom:1px solid #1a1a1a;margin:3rem 0.5rem 0.4rem;}
+.sig-name{font-size:12px;font-weight:600;color:#1a1a1a;margin-top:0.3rem;}
+.sig-role{font-size:11px;color:#999;margin-top:2px;}
+.back-btn{display:inline-block;color:#0d1f3c;font-size:13px;font-weight:500;cursor:pointer;margin-bottom:1.5rem;opacity:0.65;}
+.print-btn{position:fixed;bottom:1.5rem;right:1.5rem;background:#d4af37;color:#0d1f3c;border:none;border-radius:50px;padding:11px 22px;font-size:13px;font-weight:600;cursor:pointer;box-shadow:0 4px 16px rgba(212,175,55,0.35);z-index:999;font-family:inherit;}
+@media print{
+  body{background:#fff;}
+  .top-nav,.back-btn,.print-btn,#page-proposal,#page-password{display:none!important;}
+  #page-contract{display:block!important;}
+  .contract-wrap{padding:0;margin:0;max-width:100%;}
+}
+</style>
+</head>
+<body>
+
+<div class="top-nav">
+  <span class="nav-logo">TRES65 Inmobiliaria</span>
+  <a class="nav-link" id="contract-nav-link" onclick="showPasswordPage()">🔒 Ver Contrato</a>
+</div>
+
+<!-- PROPUESTA -->
+<div id="page-proposal">
+<div style="max-width:780px;margin:0 auto;padding:2rem 1rem;">
+
+  <!-- COVER -->
+  <div style="background:#0d1f3c;border-radius:14px;padding:2.5rem 1.5rem 2rem;margin-bottom:2rem;position:relative;overflow:hidden;">
+    <span style="font-size:11px;font-weight:500;letter-spacing:2px;text-transform:uppercase;color:#d4af37;margin-bottom:0.6rem;display:block;">Propuesta de Automatización</span>
+    <div style="font-family:Georgia,serif;font-size:26px;font-weight:600;color:#fff;line-height:1.2;margin-bottom:0.4rem;">Sistema de Captación Inteligente</div>
+    <span style="font-size:13px;color:rgba(255,255,255,0.5);display:block;margin-bottom:1.25rem;">TRES65 Inmobiliaria — Mérida, Yucatán</span>
+    <div style="width:36px;height:2px;background:#d4af37;margin-bottom:1.25rem;"></div>
+    <div style="display:flex;gap:1.5rem;flex-wrap:wrap;">
+      <div><span style="font-size:11px;color:rgba(255,255,255,0.4);display:block;">Preparado por</span><span style="font-size:12px;color:rgba(255,255,255,0.8);font-weight:500;display:block;">Consultor de Automatización</span></div>
+      <div><span style="font-size:11px;color:rgba(255,255,255,0.4);display:block;">Fecha</span><span style="font-size:12px;color:rgba(255,255,255,0.8);font-weight:500;display:block;">Abril 2026</span></div>
+      <div><span style="font-size:11px;color:rgba(255,255,255,0.4);display:block;">Versión</span><span style="font-size:12px;color:rgba(255,255,255,0.8);font-weight:500;display:block;">3.0</span></div>
+    </div>
+  </div>
+
+  <!-- SECCIÓN 1 -->
+  <div style="margin-bottom:2rem;">
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:1.1rem;"><div style="width:26px;height:26px;min-width:26px;background:#0d1f3c;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:500;color:#d4af37;">1</div><div style="font-family:Georgia,serif;font-size:18px;font-weight:600;color:#1a1a1a;">¿Qué estamos construyendo?</div></div>
+    <div style="background:#fff;border:1px solid #e8e4dc;border-radius:12px;padding:1.25rem;margin-bottom:1rem;">
+      <div style="display:flex;align-items:flex-start;gap:12px;padding:0.8rem 0;border-bottom:1px solid #f0ece4;"><div style="width:34px;min-width:34px;height:34px;background:rgba(212,175,55,0.12);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:15px;">📣</div><div><div style="font-size:13px;font-weight:600;color:#1a1a1a;margin-bottom:3px;">Campaña activa en Instagram / Facebook</div><div style="font-size:12px;color:#888;line-height:1.5;">Anuncio de propiedad genera interés. El lead hace clic o manda DM.</div></div></div>
+      <div style="text-align:center;color:#ccc;font-size:12px;padding:2px 0 2px 46px;">↓</div>
+      <div style="display:flex;align-items:flex-start;gap:12px;padding:0.8rem 0;border-bottom:1px solid #f0ece4;"><div style="width:34px;min-width:34px;height:34px;background:rgba(212,175,55,0.12);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:15px;">🤖</div><div><div style="font-size:13px;font-weight:600;color:#1a1a1a;margin-bottom:3px;">Bot humanizado responde al instante — 24/7</div><div style="font-size:12px;color:#888;line-height:1.5;">En Instagram, Facebook Messenger o WhatsApp. Saluda, genera confianza desde el primer mensaje y hace preguntas naturales.</div></div></div>
+      <div style="text-align:center;color:#ccc;font-size:12px;padding:2px 0 2px 46px;">↓</div>
+      <div style="display:flex;align-items:flex-start;gap:12px;padding:0.8rem 0;border-bottom:1px solid #f0ece4;"><div style="width:34px;min-width:34px;height:34px;background:rgba(212,175,55,0.12);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:15px;">🎯</div><div><div style="font-size:13px;font-weight:600;color:#1a1a1a;margin-bottom:3px;">Calificación automática del lead</div><div style="font-size:12px;color:#888;line-height:1.5;">¿Compra o inversión? ¿Zona preferida? ¿Presupuesto? ¿Cuándo planea decidir?</div></div></div>
+      <div style="text-align:center;color:#ccc;font-size:12px;padding:2px 0 2px 46px;">↓</div>
+      <div style="display:flex;align-items:flex-start;gap:12px;padding:0.8rem 0;border-bottom:1px solid #f0ece4;"><div style="width:34px;min-width:34px;height:34px;background:#e8f5e9;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:15px;">📅</div><div><div style="font-size:13px;font-weight:600;color:#1a1a1a;margin-bottom:3px;">Agenda cita automáticamente</div><div style="font-size:12px;color:#888;line-height:1.5;">El bot manda un link de Calendly. El cliente elige horario. Se sincroniza con Google Calendar del asesor.</div></div></div>
+      <div style="text-align:center;color:#ccc;font-size:12px;padding:2px 0 2px 46px;">↓</div>
+      <div style="display:flex;align-items:flex-start;gap:12px;padding:0.8rem 0;"><div style="width:34px;min-width:34px;height:34px;background:rgba(13,31,60,0.08);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:15px;">👤</div><div><div style="font-size:13px;font-weight:600;color:#1a1a1a;margin-bottom:3px;">Asesor entra solo cuando es necesario</div><div style="font-size:12px;color:#888;line-height:1.5;">Recibe notificación. El lead llega calificado, con contexto completo. El asesor solo cierra.</div></div></div>
+    </div>
+  </div>
+
+  <!-- SECCIÓN 2 -->
+  <div style="margin-bottom:2rem;">
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:1.1rem;"><div style="width:26px;height:26px;min-width:26px;background:#0d1f3c;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:500;color:#d4af37;">2</div><div style="font-family:Georgia,serif;font-size:18px;font-weight:600;color:#1a1a1a;">Plan de implementación</div></div>
+    <div style="background:#f9f7f3;border-radius:10px;padding:1rem;margin-bottom:0.75rem;">
+      <span style="font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#d4af37;display:block;margin-bottom:0.4rem;">Día 1 — Lo que podemos hacer hoy</span>
+      <div style="font-size:13px;font-weight:600;color:#1a1a1a;margin-bottom:0.5rem;line-height:1.3;">Sistema base funcionando en una sesión de trabajo</div>
+      <ul style="list-style:none;padding:0;">
+        <li style="font-size:11.5px;color:#777;padding:2px 0 2px 12px;position:relative;line-height:1.4;list-style:none;">— Crear cuenta ManyChat y conectar página de Facebook + Instagram</li>
+        <li style="font-size:11.5px;color:#777;padding:2px 0 2px 12px;position:relative;line-height:1.4;list-style:none;">— Configurar Calendly y sincronizar con Google Calendar del equipo</li>
+        <li style="font-size:11.5px;color:#777;padding:2px 0 2px 12px;position:relative;line-height:1.4;list-style:none;">— Escribir y cargar el script del bot (flujo de conversación)</li>
+        <li style="font-size:11.5px;color:#777;padding:2px 0 2px 12px;position:relative;line-height:1.4;list-style:none;">— Conectar ManyChat → HubSpot vía Zapier</li>
+        <li style="font-size:11.5px;color:#777;padding:2px 0 2px 12px;position:relative;line-height:1.4;list-style:none;">— Prueba en vivo: mandar DM y ver el bot responder</li>
+      </ul>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin-bottom:0;">
+      <div style="background:#f9f7f3;border-radius:10px;padding:1rem;">
+        <span style="font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1565c0;display:block;margin-bottom:0.4rem;">Semana 2–3</span>
+        <div style="font-size:13px;font-weight:600;color:#1a1a1a;margin-bottom:0.5rem;line-height:1.3;">WhatsApp Business API</div>
+        <ul style="list-style:none;padding:0;">
+          <li style="font-size:11.5px;color:#777;padding:2px 0 2px 12px;position:relative;line-height:1.4;list-style:none;">— Solicitar aprobación de Meta (2–7 días)</li>
+          <li style="font-size:11.5px;color:#777;padding:2px 0 2px 12px;position:relative;line-height:1.4;list-style:none;">— Configurar 360dialog como proveedor</li>
+          <li style="font-size:11.5px;color:#777;padding:2px 0 2px 12px;position:relative;line-height:1.4;list-style:none;">— Conectar WhatsApp a ManyChat</li>
+          <li style="font-size:11.5px;color:#777;padding:2px 0 2px 12px;position:relative;line-height:1.4;list-style:none;">— Pruebas de flujo completo</li>
+        </ul>
+      </div>
+      <div style="background:#f9f7f3;border-radius:10px;padding:1rem;">
+        <span style="font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1565c0;display:block;margin-bottom:0.4rem;">Semana 3–4</span>
+        <div style="font-size:13px;font-weight:600;color:#1a1a1a;margin-bottom:0.5rem;line-height:1.3;">Optimización del sistema</div>
+        <ul style="list-style:none;padding:0;">
+          <li style="font-size:11.5px;color:#777;padding:2px 0 2px 12px;position:relative;line-height:1.4;list-style:none;">— Analizar respuestas reales</li>
+          <li style="font-size:11.5px;color:#777;padding:2px 0 2px 12px;position:relative;line-height:1.4;list-style:none;">— Ajustar script según comportamiento</li>
+          <li style="font-size:11.5px;color:#777;padding:2px 0 2px 12px;position:relative;line-height:1.4;list-style:none;">— Configurar alertas para asesores</li>
+          <li style="font-size:11.5px;color:#777;padding:2px 0 2px 12px;position:relative;line-height:1.4;list-style:none;">— Pipeline en HubSpot</li>
+        </ul>
+      </div>
+      <div style="background:#f9f7f3;border-radius:10px;padding:1rem;">
+        <span style="font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#999;display:block;margin-bottom:0.4rem;">Semana 5–8</span>
+        <div style="font-size:13px;font-weight:600;color:#1a1a1a;margin-bottom:0.5rem;line-height:1.3;">Crecimiento y campañas</div>
+        <ul style="list-style:none;padding:0;">
+          <li style="font-size:11.5px;color:#777;padding:2px 0 2px 12px;position:relative;line-height:1.4;list-style:none;">— Estrategia de contenido IG</li>
+          <li style="font-size:11.5px;color:#777;padding:2px 0 2px 12px;position:relative;line-height:1.4;list-style:none;">— LinkedIn corporativo</li>
+          <li style="font-size:11.5px;color:#777;padding:2px 0 2px 12px;position:relative;line-height:1.4;list-style:none;">— Campañas Meta Ads</li>
+          <li style="font-size:11.5px;color:#777;padding:2px 0 2px 12px;position:relative;line-height:1.4;list-style:none;">— Reportes de conversión</li>
+        </ul>
+      </div>
+      <div style="background:#f9f7f3;border-radius:10px;padding:1rem;">
+        <span style="font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#999;display:block;margin-bottom:0.4rem;">Mes 2+</span>
+        <div style="font-size:13px;font-weight:600;color:#1a1a1a;margin-bottom:0.5rem;line-height:1.3;">Mejora continua</div>
+        <ul style="list-style:none;padding:0;">
+          <li style="font-size:11.5px;color:#777;padding:2px 0 2px 12px;position:relative;line-height:1.4;list-style:none;">— Newsletter mensual</li>
+          <li style="font-size:11.5px;color:#777;padding:2px 0 2px 12px;position:relative;line-height:1.4;list-style:none;">— Nurturing de leads fríos</li>
+          <li style="font-size:11.5px;color:#777;padding:2px 0 2px 12px;position:relative;line-height:1.4;list-style:none;">— A/B testing del bot</li>
+          <li style="font-size:11.5px;color:#777;padding:2px 0 2px 12px;position:relative;line-height:1.4;list-style:none;">— Análisis de resultados</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECCIÓN 3 -->
+  <div style="margin-bottom:2rem;">
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:1.1rem;"><div style="width:26px;height:26px;min-width:26px;background:#0d1f3c;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:500;color:#d4af37;">3</div><div style="font-family:Georgia,serif;font-size:18px;font-weight:600;color:#1a1a1a;">¿Por qué necesitamos WhatsApp API?</div></div>
+    <div style="background:rgba(13,31,60,0.03);border:1px solid rgba(13,31,60,0.1);border-left:3px solid #d4af37;border-radius:10px;padding:1rem 1.1rem;">
+      <div style="font-size:13px;font-weight:600;color:#1a1a1a;margin-bottom:0.4rem;">WhatsApp App normal vs WhatsApp Business API</div>
+      <div style="font-size:12px;color:#666;line-height:1.65;">La app gratuita solo permite 1 dispositivo, 1 persona, sin automatización real. La API permite múltiples asesores, bots, respuestas instantáneas 24/7 y registro automático en el CRM. En bienes raíces, quien responde primero suele ganar el cliente.</div>
+    </div>
+  </div>
+
+  <!-- SECCIÓN 4 -->
+  <div style="margin-bottom:2rem;">
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:1.1rem;"><div style="width:26px;height:26px;min-width:26px;background:#0d1f3c;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:500;color:#d4af37;">4</div><div style="font-family:Georgia,serif;font-size:18px;font-weight:600;color:#1a1a1a;">Inversión mensual en herramientas</div></div>
+    <div style="background:#fff;border:1px solid #e8e4dc;border-radius:12px;padding:1.25rem;margin-bottom:1rem;">
+      <!-- ManyChat -->
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 0;border-bottom:1px solid #f0ece4;">
+        <div><div style="font-size:14px;font-weight:700;color:#1a1a1a;margin-bottom:3px;">ManyChat Pro</div><div style="font-size:12px;color:#aaa;">Bot IG, Facebook, WhatsApp</div></div>
+        <div style="text-align:right;flex-shrink:0;"><span style="font-size:10px;font-weight:600;padding:2px 9px;border-radius:20px;background:rgba(212,175,55,0.15);color:#8a6d00;display:inline-block;margin-bottom:5px;">Principal</span><div style="font-size:14px;font-weight:700;color:#0d1f3c;">$45 USD</div><div style="font-size:11px;color:#bbb;">~$765 MXN</div></div>
+      </div>
+      <!-- 360dialog -->
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 0;border-bottom:1px solid #f0ece4;">
+        <div><div style="font-size:14px;font-weight:700;color:#1a1a1a;margin-bottom:3px;">360dialog</div><div style="font-size:12px;color:#aaa;">WhatsApp Business API</div></div>
+        <div style="text-align:right;flex-shrink:0;"><span style="font-size:10px;font-weight:600;padding:2px 9px;border-radius:20px;background:rgba(212,175,55,0.15);color:#8a6d00;display:inline-block;margin-bottom:5px;">API</span><div style="font-size:14px;font-weight:700;color:#0d1f3c;">$5 USD</div><div style="font-size:11px;color:#bbb;">~$85 MXN</div></div>
+      </div>
+      <!-- Meta -->
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 0;border-bottom:1px solid #f0ece4;">
+        <div><div style="font-size:14px;font-weight:700;color:#1a1a1a;margin-bottom:3px;">Meta — WhatsApp</div><div style="font-size:12px;color:#aaa;">~300 conversaciones/mes</div></div>
+        <div style="text-align:right;flex-shrink:0;"><span style="font-size:10px;font-weight:600;padding:2px 9px;border-radius:20px;background:rgba(212,175,55,0.15);color:#8a6d00;display:inline-block;margin-bottom:5px;">Variable</span><div style="font-size:14px;font-weight:700;color:#0d1f3c;">~$15 USD</div><div style="font-size:11px;color:#bbb;">~$255 MXN</div></div>
+      </div>
+      <!-- HubSpot -->
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 0;border-bottom:1px solid #f0ece4;">
+        <div><div style="font-size:14px;font-weight:700;color:#1a1a1a;margin-bottom:3px;">HubSpot Starter</div><div style="font-size:12px;color:#aaa;">CRM + seguimiento de leads</div></div>
+        <div style="text-align:right;flex-shrink:0;"><span style="font-size:10px;font-weight:600;padding:2px 9px;border-radius:20px;background:rgba(212,175,55,0.15);color:#8a6d00;display:inline-block;margin-bottom:5px;">CRM</span><div style="font-size:14px;font-weight:700;color:#0d1f3c;">$20 USD</div><div style="font-size:11px;color:#bbb;">~$340 MXN</div></div>
+      </div>
+      <!-- Zapier -->
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 0;border-bottom:1px solid #f0ece4;">
+        <div><div style="font-size:14px;font-weight:700;color:#1a1a1a;margin-bottom:3px;">Zapier</div><div style="font-size:12px;color:#aaa;">Conexión entre herramientas</div></div>
+        <div style="text-align:right;flex-shrink:0;"><span style="font-size:10px;font-weight:600;padding:2px 9px;border-radius:20px;background:rgba(212,175,55,0.15);color:#8a6d00;display:inline-block;margin-bottom:5px;">Integración</span><div style="font-size:14px;font-weight:700;color:#0d1f3c;">$20 USD</div><div style="font-size:11px;color:#bbb;">~$340 MXN</div></div>
+      </div>
+      <!-- Calendly -->
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 0;border-bottom:1px solid #f0ece4;">
+        <div><div style="font-size:14px;font-weight:700;color:#1a1a1a;margin-bottom:3px;">Calendly</div><div style="font-size:12px;color:#aaa;">Agenda automática + Google Calendar</div></div>
+        <div style="text-align:right;flex-shrink:0;"><span style="font-size:10px;font-weight:600;padding:2px 9px;border-radius:20px;background:#e8f5e9;color:#2e7d32;display:inline-block;margin-bottom:5px;">Gratis</span><div style="font-size:14px;font-weight:700;color:#0d1f3c;">$0</div><div style="font-size:11px;color:#bbb;">$0</div></div>
+      </div>
+      <!-- Total -->
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;padding:16px 0 4px;border-top:2px solid #1a1a1a;margin-top:4px;">
+        <div style="font-size:14px;font-weight:700;color:#1a1a1a;">Total mensual estimado</div>
+        <div style="text-align:right;"><div style="font-size:20px;font-weight:700;color:#0d1f3c;">~$105 USD</div><div style="font-size:12px;color:#999;">~$1,785 MXN</div></div>
+      </div>
+      <div style="font-size:11px;color:#bbb;margin-top:0.5rem;font-style:italic;">Tipo de cambio referencia: $17 MXN por $1 USD — abril 2026</div>
+    </div>
+  </div>
+
+  <!-- SECCIÓN 5 -->
+  <div style="margin-bottom:2rem;">
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:1.1rem;"><div style="width:26px;height:26px;min-width:26px;background:#0d1f3c;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:500;color:#d4af37;">5</div><div style="font-family:Georgia,serif;font-size:18px;font-weight:600;color:#1a1a1a;">Lo que necesitamos saber de ustedes</div></div>
+    <div style="background:#fff;border:1px solid #e8e4dc;border-radius:12px;padding:1.25rem;">
+
+      <span style="font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#d4af37;padding-bottom:0.4rem;border-bottom:1px solid #ede9e1;margin-bottom:0.6rem;display:block;">Accesos y cuentas</span>
+      <ul style="list-style:none;padding:0;margin-bottom:1rem;">
+        <li style="font-size:13px;color:#1a1a1a;padding:0.5rem 0 0.5rem 14px;border-bottom:1px solid #f5f2ed;line-height:1.5;list-style:none;position:relative;">· ¿Quién tiene acceso de administrador a Facebook e Instagram?</li>
+        <li style="font-size:13px;color:#1a1a1a;padding:0.5rem 0 0.5rem 14px;border-bottom:1px solid #f5f2ed;line-height:1.5;list-style:none;position:relative;">· ¿Tienen Google Workspace o usan Gmail personal para el negocio?</li>
+        <li style="font-size:13px;color:#1a1a1a;padding:0.5rem 0 0.5rem 14px;border-bottom:1px solid #f5f2ed;line-height:1.5;list-style:none;position:relative;">· ¿Tienen WhatsApp Business o solo WhatsApp normal?</li>
+        <li style="font-size:13px;color:#1a1a1a;padding:0.5rem 0 0.5rem 14px;border-bottom:1px solid #f5f2ed;line-height:1.5;list-style:none;position:relative;">· ¿El número de WhatsApp está en un celular físico o SIM dedicada?</li>
+        <li style="font-size:13px;color:#1a1a1a;padding:0.5rem 0 0 14px;line-height:1.5;list-style:none;position:relative;">· ¿Tienen HubSpot creado o empezamos desde cero?</li>
+      </ul>
+
+      <span style="font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#d4af37;padding-bottom:0.4rem;border-bottom:1px solid #ede9e1;margin-bottom:0.6rem;margin-top:1rem;display:block;">Operación actual</span>
+      <ul style="list-style:none;padding:0;margin-bottom:1rem;">
+        <li style="font-size:13px;color:#1a1a1a;padding:0.5rem 0 0.5rem 14px;border-bottom:1px solid #f5f2ed;line-height:1.5;list-style:none;position:relative;">· ¿Cuántos DMs o WhatsApps diarios quedan sin respuesta?</li>
+        <li style="font-size:13px;color:#1a1a1a;padding:0.5rem 0 0.5rem 14px;border-bottom:1px solid #f5f2ed;line-height:1.5;list-style:none;position:relative;">· ¿Cómo se agendan citas hoy? ¿Hay un proceso o es manual?</li>
+        <li style="font-size:13px;color:#1a1a1a;padding:0.5rem 0 0.5rem 14px;border-bottom:1px solid #f5f2ed;line-height:1.5;list-style:none;position:relative;">· ¿Cuántos asesores necesitan acceso al sistema?</li>
+        <li style="font-size:13px;color:#1a1a1a;padding:0.5rem 0 0.5rem 14px;border-bottom:1px solid #f5f2ed;line-height:1.5;list-style:none;position:relative;">· ¿De dónde vienen la mayoría de sus leads? (IG, referidos, portales...)</li>
+        <li style="font-size:13px;color:#1a1a1a;padding:0.5rem 0 0.5rem 14px;border-bottom:1px solid #f5f2ed;line-height:1.5;list-style:none;position:relative;">· ¿Tienen guión estándar de ventas o cada asesor improvisa?</li>
+        <li style="font-size:13px;color:#1a1a1a;padding:0.5rem 0 0.5rem 14px;border-bottom:1px solid #f5f2ed;line-height:1.5;list-style:none;position:relative;">· ¿Cuánto tiempo tarda cerrar una venta desde el primer contacto?</li>
+        <li style="font-size:13px;color:#1a1a1a;padding:0.5rem 0 0 14px;line-height:1.5;list-style:none;position:relative;">· ¿Tienen propiedades activas fuera de Mérida? (Tulum, etc.)</li>
+      </ul>
+
+      <span style="font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#d4af37;padding-bottom:0.4rem;border-bottom:1px solid #ede9e1;margin-bottom:0.6rem;margin-top:1rem;display:block;">Equipo y decisiones</span>
+      <ul style="list-style:none;padding:0;margin-bottom:1rem;">
+        <li style="font-size:13px;color:#1a1a1a;padding:0.5rem 0 0.5rem 14px;border-bottom:1px solid #f5f2ed;line-height:1.5;list-style:none;position:relative;">· ¿Hay alguien dedicado a redes sociales o lo maneja el equipo de ventas?</li>
+        <li style="font-size:13px;color:#1a1a1a;padding:0.5rem 0 0.5rem 14px;border-bottom:1px solid #f5f2ed;line-height:1.5;list-style:none;position:relative;">· ¿Quién toma decisiones de herramientas y presupuesto?</li>
+        <li style="font-size:13px;color:#1a1a1a;padding:0.5rem 0 0 14px;line-height:1.5;list-style:none;position:relative;">· ¿Usan algún CRM hoy, aunque sea Excel o Notion?</li>
+      </ul>
+
+      <span style="font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#d4af37;padding-bottom:0.4rem;border-bottom:1px solid #ede9e1;margin-bottom:0.6rem;margin-top:1rem;display:block;">Contenido y marca</span>
+      <ul style="list-style:none;padding:0;">
+        <li style="font-size:13px;color:#1a1a1a;padding:0.5rem 0 0.5rem 14px;border-bottom:1px solid #f5f2ed;line-height:1.5;list-style:none;position:relative;">· ¿Tienen fotógrafo o producen el contenido visual internamente?</li>
+        <li style="font-size:13px;color:#1a1a1a;padding:0.5rem 0 0.5rem 14px;border-bottom:1px solid #f5f2ed;line-height:1.5;list-style:none;position:relative;">· ¿Tienen tono de marca definido o varía según quien publica?</li>
+        <li style="font-size:13px;color:#1a1a1a;padding:0.5rem 0 0.5rem 14px;border-bottom:1px solid #f5f2ed;line-height:1.5;list-style:none;position:relative;">· ¿Están corriendo Meta Ads ahora o solo contenido orgánico?</li>
+        <li style="font-size:13px;color:#1a1a1a;padding:0.5rem 0 0 14px;line-height:1.5;list-style:none;position:relative;">· ¿Tienen Business Manager de Meta correctamente configurado?</li>
+      </ul>
+
+      <div style="background:#0d1f3c;border-radius:10px;padding:1rem 1.1rem;margin-top:1rem;">
+        <span style="font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#d4af37;margin-bottom:0.4rem;display:block;">La pregunta más importante</span>
+        <div style="font-size:13px;color:rgba(255,255,255,0.88);font-style:italic;line-height:1.6;">"¿Cuántos leads creen que se les han ido por no responder a tiempo?"</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECCIÓN 6 -->
+  <div style="margin-bottom:2rem;">
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:1.1rem;"><div style="width:26px;height:26px;min-width:26px;background:#0d1f3c;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:500;color:#d4af37;">6</div><div style="font-family:Georgia,serif;font-size:18px;font-weight:600;color:#1a1a1a;">Recomendaciones adicionales</div></div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin-bottom:0.85rem;">
+      <div style="background:#f9f7f3;border-radius:10px;padding:1rem;"><div style="font-size:20px;margin-bottom:6px;">💼</div><span style="font-size:10px;font-weight:500;padding:2px 8px;border-radius:20px;background:rgba(212,175,55,0.15);color:#8a6d00;display:inline-block;margin-bottom:0.35rem;">Marca profesional</span><div style="font-size:13px;font-weight:600;color:#1a1a1a;margin-bottom:0.3rem;">LinkedIn corporativo</div><div style="font-size:11.5px;color:#777;line-height:1.5;">Posicionamiento como expertos en Yucatán. Atrae inversionistas y aliados estratégicos.</div></div>
+      <div style="background:#f9f7f3;border-radius:10px;padding:1rem;"><div style="font-size:20px;margin-bottom:6px;">📊</div><span style="font-size:10px;font-weight:500;padding:2px 8px;border-radius:20px;background:rgba(212,175,55,0.15);color:#8a6d00;display:inline-block;margin-bottom:0.35rem;">Inteligencia</span><div style="font-size:13px;font-weight:600;color:#1a1a1a;margin-bottom:0.3rem;">Reportes mensuales</div><div style="font-size:11.5px;color:#777;line-height:1.5;">Dashboard de leads, citas y cierres. Saber qué funciona para invertir mejor.</div></div>
+      <div style="background:#f9f7f3;border-radius:10px;padding:1rem;"><div style="font-size:20px;margin-bottom:6px;">🔁</div><span style="font-size:10px;font-weight:500;padding:2px 8px;border-radius:20px;background:rgba(212,175,55,0.15);color:#8a6d00;display:inline-block;margin-bottom:0.35rem;">Leads fríos</span><div style="font-size:13px;font-weight:600;color:#1a1a1a;margin-bottom:0.3rem;">Nurturing automático</div><div style="font-size:11.5px;color:#777;line-height:1.5;">Emails cada 2–3 semanas. El que sigue presente cuando deciden — gana.</div></div>
+      <div style="background:#f9f7f3;border-radius:10px;padding:1rem;"><div style="font-size:20px;margin-bottom:6px;">✍️</div><span style="font-size:10px;font-weight:500;padding:2px 8px;border-radius:20px;background:rgba(212,175,55,0.15);color:#8a6d00;display:inline-block;margin-bottom:0.35rem;">Contenido</span><div style="font-size:13px;font-weight:600;color:#1a1a1a;margin-bottom:0.3rem;">Copywriting</div><div style="font-size:11.5px;color:#777;line-height:1.5;">Descripciones que venden emoción. El texto correcto reduce el tiempo de cierre.</div></div>
+      <div style="background:#f9f7f3;border-radius:10px;padding:1rem;"><div style="font-size:20px;margin-bottom:6px;">📸</div><span style="font-size:10px;font-weight:500;padding:2px 8px;border-radius:20px;background:rgba(212,175,55,0.15);color:#8a6d00;display:inline-block;margin-bottom:0.35rem;">Alcance orgánico</span><div style="font-size:13px;font-weight:600;color:#1a1a1a;margin-bottom:0.3rem;">Estrategia IG</div><div style="font-size:11.5px;color:#777;line-height:1.5;">Calendario editorial con propiedades, tips y testimonios.</div></div>
+      <div style="background:#f9f7f3;border-radius:10px;padding:1rem;"><div style="font-size:20px;margin-bottom:6px;">🎯</div><span style="font-size:10px;font-weight:500;padding:2px 8px;border-radius:20px;background:rgba(212,175,55,0.15);color:#8a6d00;display:inline-block;margin-bottom:0.35rem;">Alcance pagado</span><div style="font-size:13px;font-weight:600;color:#1a1a1a;margin-bottom:0.3rem;">Meta Ads</div><div style="font-size:11.5px;color:#777;line-height:1.5;">Campañas segmentadas. El bot se encarga en cuanto llega el lead.</div></div>
+    </div>
+    <div style="background:#0d1f3c;border-radius:12px;padding:1.25rem;">
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:0.75rem;"><span style="font-size:24px;">📬</span><div><div style="font-family:Georgia,serif;font-size:16px;color:#fff;font-weight:600;">Newsletter mensual para clientes</div><span style="font-size:11px;color:#d4af37;margin-top:2px;display:block;">Recomendación estratégica destacada</span></div></div>
+      <div style="font-size:12px;color:rgba(255,255,255,0.62);line-height:1.65;margin-bottom:0.75rem;">La mayoría de leads no compran hoy — compran en 3, 6 o hasta 12 meses. Un newsletter mensual mantiene a TRES65 presente sin que ningún asesor haga nada manualmente. Cuando el cliente esté listo, ya sabe a quién llamar.</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.4rem;">
+        <div style="font-size:11px;color:rgba(255,255,255,0.72);padding:0.35rem 0.6rem;border:1px solid rgba(212,175,55,0.2);border-radius:8px;display:flex;align-items:center;gap:6px;line-height:1.4;"><div style="width:5px;min-width:5px;height:5px;border-radius:50%;background:#d4af37;"></div>Zonas de Mérida que suben de valor</div>
+        <div style="font-size:11px;color:rgba(255,255,255,0.72);padding:0.35rem 0.6rem;border:1px solid rgba(212,175,55,0.2);border-radius:8px;display:flex;align-items:center;gap:6px;line-height:1.4;"><div style="width:5px;min-width:5px;height:5px;border-radius:50%;background:#d4af37;"></div>Tips para comprar primera vez</div>
+        <div style="font-size:11px;color:rgba(255,255,255,0.72);padding:0.35rem 0.6rem;border:1px solid rgba(212,175,55,0.2);border-radius:8px;display:flex;align-items:center;gap:6px;line-height:1.4;"><div style="width:5px;min-width:5px;height:5px;border-radius:50%;background:#d4af37;"></div>Renta vs compra en 2026</div>
+        <div style="font-size:11px;color:rgba(255,255,255,0.72);padding:0.35rem 0.6rem;border:1px solid rgba(212,175,55,0.2);border-radius:8px;display:flex;align-items:center;gap:6px;line-height:1.4;"><div style="width:5px;min-width:5px;height:5px;border-radius:50%;background:#d4af37;"></div>Proyectos nuevos e inversión</div>
+        <div style="font-size:11px;color:rgba(255,255,255,0.72);padding:0.35rem 0.6rem;border:1px solid rgba(212,175,55,0.2);border-radius:8px;display:flex;align-items:center;gap:6px;line-height:1.4;"><div style="width:5px;min-width:5px;height:5px;border-radius:50%;background:#d4af37;"></div>Casos de éxito de clientes</div>
+        <div style="font-size:11px;color:rgba(255,255,255,0.72);padding:0.35rem 0.6rem;border:1px solid rgba(212,175,55,0.2);border-radius:8px;display:flex;align-items:center;gap:6px;line-height:1.4;"><div style="width:5px;min-width:5px;height:5px;border-radius:50%;background:#d4af37;"></div>Noticias del mercado local</div>
+      </div>
+    </div>
+  </div>
+
+  <div style="text-align:center;padding-top:1.5rem;font-size:11px;color:#bbb;">TRES65 Inmobiliaria · Propuesta confidencial · Abril 2026</div>
+</div>
+</div>
+
+<!-- PASSWORD PAGE -->
+<div id="page-password" style="display:none;min-height:80vh;background:#0d1f3c;align-items:center;justify-content:center;">
+  <div class="pw-box">
+    <div style="font-size:32px;margin-bottom:0.75rem;">🔐</div>
+    <div style="font-family:Georgia,serif;font-size:20px;color:#0d1f3c;font-weight:600;margin-bottom:0.25rem;">TRES65</div>
+    <div style="font-size:12px;color:#aaa;margin-bottom:1.5rem;">Área privada — Contrato de Servicios</div>
+    <input class="pw-input" type="password" id="pw-input" placeholder="Ingresa la contraseña" onkeydown="if(event.key==='Enter')checkPw()"/>
+    <button class="pw-btn" onclick="checkPw()">Acceder al contrato</button>
+    <div class="pw-error" id="pw-error">Contraseña incorrecta.</div>
+    <div style="font-size:11px;color:#ccc;margin-top:0.85rem;">Acceso restringido · Solo partes autorizadas</div>
+  </div>
+</div>
+
+<!-- CONTRACT PAGE -->
+<div id="page-contract" style="display:none;">
+  <div class="contract-wrap">
+    <div class="back-btn" onclick="backToProposal()">← Volver a la propuesta</div>
+    <div class="contract-header">
+      <div class="contract-title">Contrato de Prestación de Servicios</div>
+      <div class="contract-sub">Servicios de Consultoría Digital y Automatización · Mérida, Yucatán · Abril 2026</div>
+    </div>
+    <div class="clause"><div class="clause-title">I. Partes contratantes</div><div class="clause-text"><p>El presente contrato se celebra entre:</p><p><span class="hv">PRESTADORA DE SERVICIOS:</span> María Fernanda Pérez Salinas Serna, en lo sucesivo denominada "LA PRESTADORA", quien actúa a título personal como contratista independiente.</p><p><span class="hv">CLIENTE:</span> Moisés Traconis Corres, en lo sucesivo denominado "EL CLIENTE", propietario y representante de TRES65 Inmobiliaria, con domicilio en Calle 37-F #41 x calle 12 y 16, C.P. 97215, Mérida, Yucatán.</p></div></div>
+    <div class="clause"><div class="clause-title">II. Objeto del contrato</div><div class="clause-text"><p>LA PRESTADORA se compromete a proveer servicios de consultoría digital y automatización que incluyen: diseño e implementación de sistema de captación de leads (ManyChat, HubSpot, WhatsApp Business API, Zapier y Calendly); desarrollo de bot humanizado para Instagram, Facebook Messenger y WhatsApp; configuración de pipeline de seguimiento en HubSpot CRM; y asesoría estratégica en posicionamiento digital durante la vigencia del contrato.</p></div></div>
+    <div class="clause"><div class="clause-title">III. Naturaleza de la relación</div><div class="clause-text"><p>Las partes reconocen expresamente que el presente contrato <span class="hv">no constituye una relación laboral</span>. LA PRESTADORA actúa como contratista independiente con plena autonomía en métodos, horarios y herramientas. No existe vínculo de subordinación ni obligación de cubrir prestaciones laborales o seguridad social.</p></div></div>
+    <div class="clause"><div class="clause-title">IV. Vigencia</div><div class="clause-text"><p>El presente contrato tendrá una vigencia de <span class="hv">dos (2) meses calendario</span> a partir de la fecha de firma. Al término, las partes podrán acordar renovación por escrito.</p></div></div>
+    <div class="clause"><div class="clause-title">V. Contraprestación</div><div class="clause-text"><p>En retribución por los servicios, EL CLIENTE proveerá la siguiente contraprestación en especie, acordada libremente:</p><p><span class="hv">a) Aguachiles:</span> Dos (2) salidas gastronómicas al establecimiento de preferencia de LA PRESTADORA, dentro de la vigencia del contrato.</p><p><span class="hv">b) Piojito:</span> Dos (2) horas totales de revisión capilar, en sesiones de treinta (30) minutos por quincena — cuatro (4) sesiones en total.</p><p><span class="hv">c) Calzado:</span> Un (1) par de zapatos adquiridos originalmente por la señora Fernanda Avelar, valuados en <span class="hv">$1,532.00 MXN (un mil quinientos treinta y dos pesos mexicanos 00/100 M.N.)</span>, transferidos a LA PRESTADORA como parte de la contraprestación.</p><p>Las partes declaran que la contraprestación representa valor real y suficiente, acordada libremente y sin presión.</p></div></div>
+    <div class="clause"><div class="clause-title">VI. Obligaciones de la prestadora</div><div class="clause-text"><p>LA PRESTADORA se obliga a: ejecutar los servicios con diligencia y profesionalismo; mantener confidencialidad sobre información de negocio y clientes de TRES65 Inmobiliaria; informar oportunamente sobre el avance; no subcontratar sin autorización expresa.</p></div></div>
+    <div class="clause"><div class="clause-title">VII. Obligaciones del cliente</div><div class="clause-text"><p>EL CLIENTE se obliga a: proporcionar accesos e información necesarios; cumplir en tiempo y forma con la contraprestación de la Cláusula V; colaborar activamente en las etapas que requieran su participación.</p></div></div>
+    <div class="clause"><div class="clause-title">VIII. Propiedad intelectual</div><div class="clause-text"><p>Los entregables serán de uso exclusivo de TRES65 Inmobiliaria durante la vigencia. LA PRESTADORA conserva el derecho de referir el proyecto en su portafolio de manera general, sin revelar información confidencial.</p></div></div>
+    <div class="clause"><div class="clause-title">IX. Terminación anticipada</div><div class="clause-text"><p>Cualquiera de las partes podrá dar por terminado el contrato con aviso previo de <span class="hv">siete (7) días naturales</span>. En terminación anticipada por EL CLIENTE, la contraprestación devengada será cubierta proporcionalmente.</p></div></div>
+    <div class="clause"><div class="clause-title">X. Legislación aplicable</div><div class="clause-text"><p>Este contrato se rige por las leyes del Estado de Yucatán y los Estados Unidos Mexicanos. Las partes se someten a los tribunales de Mérida, Yucatán, renunciando a cualquier otro fuero.</p></div></div>
+    <div class="clause"><div class="clause-title">XI. Aceptación</div><div class="clause-text"><p>Habiendo leído y comprendido este instrumento, las partes lo firman de conformidad en Mérida, Yucatán, en el mes de abril de dos mil veintiséis.</p></div></div>
+    <div class="sig-section">
+      <div class="sig-block"><span class="sig-label">Prestadora de Servicios</span><div class="sig-line-blank"></div><div class="sig-name">María Fernanda Pérez Salinas Serna</div><div class="sig-role">Consultora Digital Independiente</div></div>
+      <div class="sig-block"><span class="sig-label">Cliente</span><div class="sig-line-blank"></div><div class="sig-name">Moisés Traconis Corres</div><div class="sig-role">TRES65 Inmobiliaria</div></div>
+    </div>
+  </div>
+</div>
+
+<button class="print-btn" id="print-btn" onclick="window.print()" style="display:none;">🖨️ Imprimir / PDF</button>
+
+<script>
+  const PW = 'soy amante de los gatos';
+  function showPasswordPage() {
+    document.getElementById('page-proposal').style.display = 'none';
+    document.getElementById('page-password').style.display = 'flex';
+    document.getElementById('contract-nav-link').style.display = 'none';
+    document.getElementById('print-btn').style.display = 'none';
+    setTimeout(() => document.getElementById('pw-input').focus(), 100);
+  }
+  function checkPw() {
+    const val = document.getElementById('pw-input').value.trim().toLowerCase();
+    if (val === PW) {
+      document.getElementById('page-password').style.display = 'none';
+      document.getElementById('page-contract').style.display = 'block';
+      document.getElementById('print-btn').style.display = 'block';
+      document.getElementById('pw-error').style.display = 'none';
+    } else {
+      document.getElementById('pw-error').style.display = 'block';
+      document.getElementById('pw-input').value = '';
+    }
+  }
+  function backToProposal() {
+    document.getElementById('page-contract').style.display = 'none';
+    document.getElementById('page-proposal').style.display = 'block';
+    document.getElementById('contract-nav-link').style.display = '';
+    document.getElementById('print-btn').style.display = 'none';
+  }
+</script>
+</body>
+</html>
